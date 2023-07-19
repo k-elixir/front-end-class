@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>Hello,World!</div>
+    <button>click</button>
+  </body>
+  <script>
+    let button = document.querySelector("button");
+    button.addEventListener("click", changeDisplay);
+    function changeDisplay() {
+      let element = document.querySelector("div");
+      if (element.style.display == "block") {
+        element.style.display = "none";
+      } else {
+        element.style.display = "block";
+      }
+    }
+  </script>
+</html>

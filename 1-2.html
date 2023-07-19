@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .changeColor {
+        color: darkslategray;
+        background-color: darkgray;
+        max-width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hello, world!</p>
+    <button>click</button>
+  </body>
+  <script>
+    let element = document.querySelector("p");
+    let button = document.querySelector("button");
+
+    button.addEventListener("mouseover", addClass);
+    button.addEventListener("mouseout", defaultStyle);
+    function addClass() {
+      element.classList.add("changeColor");
+    }
+    function defaultStyle() {
+      element.classList.remove("changeColor");
+    }
+  </script>
+</html>
