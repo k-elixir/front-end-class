@@ -1,8 +1,8 @@
-// try {
-//   let divide = 10 / 0;
-// } catch (error) {
-//   console.log("division by zero is not allowed");
-// }
-
-let divide = 10 / 0;
-console.log(divide);
+let firstNum = 10;
+let secondNum = 10;
+try {
+  if (secondNum == 0) throw "division by zero is not allowed";
+  console.log(firstNum / secondNum);
+} catch (error) {
+  console.log(error);
+}
