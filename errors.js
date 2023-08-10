@@ -5,6 +5,6 @@
 // Missing or invalid semicolons.
 
 const error = "hello";
-console.log(error);
+// console.log(error);
 // console.log(RefErrors);
-// console.log(error());
+console.log(error());
