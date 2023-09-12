@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  display: grid;
+}
+button {
+  width: 100px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.random-div {
+  padding: 50px;
+}
